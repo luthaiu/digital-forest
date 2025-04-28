@@ -29,7 +29,7 @@ header {
 .section-top {
     display: flex;
     width: 100%;
-    height: 600px; /* example height */
+    height: 600px;
     background-color: #a34747;
     text-align: center;
     padding-top: 10px;
@@ -40,15 +40,27 @@ header {
     width: 25%;
     text-align: right;
     display: flex;
-    flex-direction: column; /* stack vertically */
-    align-items: flex-end; /* align to the right */
-    justify-content: center; /* center vertically */
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     font-size: 40px;
 }
 
-.contained-carousel {
+.container-carousel {
     width: 75%;
     background-color: yellow;
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-image {
+    height: 500px;
+    width: 350px;
+    background: green;
+    margin-right: 5px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 /* Fuentes */
